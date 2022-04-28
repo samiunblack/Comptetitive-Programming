@@ -14,6 +14,16 @@ class randomClass
     //add access specifier "public" 
     //if you want to use the methods outside class.
     public:
+
+        //constructor is a function that gets called
+        //automatically when you make an object
+        //constructor doesnt need any return_type
+        //constructor name is always the classname
+        randomClass(string z)
+        {
+            setName(z);
+        }
+        
         void coolSaying()
         {
             cout << "Sam's really cool 😎" << endl;
@@ -41,14 +51,15 @@ int main()
 {
     //object- reference of a class
     //declaring a object- classname objectname;
-    randomClass randomeStuff;
+    //write the parameters that the constructor need
+    randomClass randomStuff("Samiun");
 
-    //getting methods and properties from object
-    //objectname.method()
-    randomeStuff.coolSaying();
-    randomeStuff.setName("Sam");
+    // getting methods and properties from object
+    // objectname.method()
+    // randomeStuff.coolSaying();
+    randomStuff.coolSaying();
     
-    cout << "This coder's name is " << randomeStuff.getName() << endl;
+    cout << "This coder's name is " << randomStuff.getName() << endl;
 
     return 0;
 }
