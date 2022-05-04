@@ -1,9 +1,14 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World";
+    int n;
+    cin >> n;
+
+    
+
     return 0;
 }
